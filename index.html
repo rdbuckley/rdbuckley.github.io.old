@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <head>
+<style>
+  #sourceTA {
+    display: block;
+}
+#targetDiv {
+  border: 1px dashed #333333;
+  width: 600px;
+  height: 400px;
+}
+  </style>
+  
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js" integrity="sha256-LSUpTY0kkXGKvcBC9kbmgibmx3NVVgJvAEfTZbs51mU=" crossorigin="anonymous"></script>
 
+<script>
+function run() {
+  var text = document.getElementById('sourceTA').value,
+      target = document.getElementById('targetDiv'),
+      converter = new showdown.Converter(),
+      html = converter.makeHtml(text);
+    
+    target.innerHTML = html;
+}
+</script>
+  
   
 <!-- <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@tweagio" />
@@ -41,7 +63,34 @@
 </head>
 <html>
   <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+<textarea id="sourceTA" rows="10" cols="82">
+Showdown Tutorial
+=================
+
+This is a showdown tutorial. 
+
+Showdown supports a number of cool features, namely:
+
+  - headers 
+  - lists
+  - and other stuff too
+  
+It is also possible to include code:
+
+    var foo = 'bar';
+    
+    var baz = {
+      markdown: 'is great',
+      showdown: 'is awesome'
+    }
+
+Don't forget to check the [extensions wiki][1].
+
+[1]: https://github.com/showdownjs/showdown/wiki/extensions
+</textarea>
+<hr/>
+<button id="runBtn" onClick="run()">Convert</button>
+<hr/>
+<div id="targetDiv"></div>
   </body>
 </html>
