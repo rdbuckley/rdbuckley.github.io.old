@@ -5,7 +5,7 @@
     display: none;
 }
 #targetDiv {
-  border: 1px dashed #333333;
+/*  border: 1px dashed #333333;*/
   width: 600px;
   height: 400px;
 }
@@ -66,29 +66,53 @@ function run() {
 <html>
   <body onload="run();">
 <textarea id="sourceTA" rows="10" cols="82">
-Showdown Tutorial
-=================
+Every day we write repetitive code.
+A lot of it is boilerplate that you write only to satisfy your compiler/interpreter:
+code that is not related to the main logic of the program like import and export lists, language extensions, file headers.
+But how do languages differ in their boilerplate content?
+Is it only the content of the boilerplate that changes, or also its quantity?
+We explore these questions using data sets of Python and Haskell code.
+Besides satisfying our curiosity, we will learn about community-wide habits and realize that after all, repetition is not necessarily uninteresting!
 
-This is a showdown tutorial. 
 
-Showdown supports a number of cool features, namely:
+## A first look at the data
 
-  - headers 
-  - lists
-  - and other stuff too
-  
-It is also possible to include code:
+Our data sets come from public repositories of Haskell and Python packages.
+In the case of Haskell, we use a current snapshot of all packages on the [Stackage](http://www.stackage.org) server.
+For Python, we downloaded a random subset of approximately 2% of all packages on the [Python Package Index](http://www.pypi.org).
+Based on our sample, we estimate the total size of all (compressed!) packages on PyPI to be approximately 19 Gb.
+We chose to use only a small sample from PyPI so that we could perform analyses on our laptops.
+This sampling allows us to load the Python data set in memory, while keeping its size comparable to the Haskell one.
 
-    var foo = 'bar';
-    
-    var baz = {
-      markdown: 'is great',
-      showdown: 'is awesome'
-    }
+Let's first look at a few key characteristics of our data sets, namely the number of packages, total number of lines of code (LOC), LOC per package, number of words, and the most common word:
 
-Don't forget to check the [extensions wiki][1].
+<center>
 
-[1]: https://github.com/showdownjs/showdown/wiki/extensions
+|                             | Python        | Haskell        |
+| --------------------------- | ------------- | -------------- |
+| **Number of packages**      | 3414          | 2312           |
+| **LOC**                     | 6,048,755     | 3,862,107      |
+| **Average LOC per package** | 1772          | 1760           |
+| **Number of words**         | 36,577,867    | 23,174,821     |
+| **Most common word**        | `x` (6,7%)    | `NUL` (4,5%)   |
+
+</center>
+
+Hold on! `NUL` is the most common word in Stackage packages? Surprising, but true: `\NUL` is the quotation of the null character, and a small number of packages (2.7%) have inline byte strings with many, many copies of `\NUL` in them.
+The next common Haskell word is "a", which is a common type and term variable name.
+It is also interesting to see that the average number of lines of code is very, very similar in the Haskell and the Python data sets!
+
+## Import statements and language extensions—how many are there?
+
+Now let's take a closer look and see what we can learn from this data.
+As you might know, in both Python and Haskell files start with a list of import statement. In Haskell, file headers also contain a list of `LANGUAGE` pragmas, which add extensions to the language.
+We thus expect `import` statements to be a common pattern in the source code data sets.
+In Haskell, we imagine `LANGUAGE` pragmas to be another common pattern.
+
+Let's find out whether there are any differences in the frequency of these patterns between Python and Haskell code.
+We can easily determine a package's fraction of lines of code that correspond to `import` statements and `LANGUAGE` pragmas:
+this fraction is just the number of lines of code with import and language pragma keywords divided by the number of all lines of code.
+The following histograms show the results:
 </textarea>
 <hr/>
 <button id="runBtn" onClick="run()">Convert</button>
