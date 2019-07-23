@@ -10,6 +10,11 @@ Besides satisfying our curiosity, we will learn about community-wide habits and 
 
 <script src="https://gist.github.com/rdbuckley/be12c017361da67fd0779c914b3826be.js"></script>
 
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
 
 
 Our data sets come from public repositories of Haskell and Python packages.
