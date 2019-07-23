@@ -8,8 +8,7 @@ Besides satisfying our curiosity, we will learn about community-wide habits and 
 
 ## A first look at the data
 
-<script src="https://gist.github.com/rdbuckley/be12c017361da67fd0779c914b3826be.js"></script>
-
+<!-- blank line -->
 <!-- blank line -->
 <figure class="video_container">
   <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
