@@ -1,6 +1,12 @@
 <html>
 <body>
 <p>Page Title</p>
+  
+  <div class="dots">
+    <img id="white" onclick="switchImg()" src="http://scoutingwithtroop225.com/White%20Dot.jpeg" />
+    <img id="orange" style="display:none" onclick="switchImg()" src="http://dbprng00ikc2j.cloudfront.net/work/image/269918/qg7swq/ORANGE_DOT.jpg" />
+</div>
+  
 <div id="logo" style="visibility:hidden;width:500px"><img style="width:50%" src=https://www.tweag.io/img/tweag-square.png></div>
 <div id="namepluslogo" style="visibility:hidden;width:500px"><img style="width:50%"src=https://www.tweag.io/img/logo-tweag-big.svg></div>
 <table width="50%" border="0" cellspacing="0" cellpadding="0">
@@ -10,5 +16,30 @@
   </tr>
 </table>
 <div id="NameOrNot"></div>
+<script><!-- Switch images script -->
+<script type="text/javascript">
+  function swapImage(id,primary,secondary) {
+    src=document.getElementById(id).src;
+    if (src.match(primary)) {
+      document.getElementById(id).src=secondary;
+    } else {
+      document.getElementById(id).src=primary;
+    }
+  }
+  </script>
+<script type='text/javascript'>
+    function switchImg(){
+    if($('#white').css('display') == 'none'){
+        $('#white').css('display', 'block');
+        $('#orange').css('display', 'none');
+    }
+    else
+    {
+        $('#white').css('display', 'none');
+        $('#orange').css('display', 'block');
+    }
+  }
+</script></script>
 </body>
+  
 </html>
