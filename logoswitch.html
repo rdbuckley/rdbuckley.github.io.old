@@ -16,6 +16,7 @@
   </tr>
 </table>
 <div id="NameOrNot"></div>
+  <img src="https://www.tweag.io/img/tweag-square.png" alt="Circle" id="circle" onclick="change();">
 <script>
   function swapImage(id,primary,secondary) {
     src=document.getElementById(id).src;
@@ -26,18 +27,21 @@
     }
   }
   </script>
-<script type='text/javascript'>
-    function switchImg(){
-    if($('#white').css('display') == 'none'){
-        $('#white').css('display', 'block');
-        $('#orange').css('display', 'none');
-    }
-    else
-    {
-        $('#white').css('display', 'none');
-        $('#orange').css('display', 'block');
-    }
-  }
+  <script>
+var image_tracker = 'orange';
+ 
+ function change(){
+ var image = document.getElementById('circle');
+ if(image_tracker=='orange'){
+ image.src='https://www.tweag.io/img/tweag-square.png';
+ image_tracker='blue';
+ }
+ else{
+ image.src='https://www.tweag.io/img/logo-tweag-big.svg';
+ image_tracker='orange';
+ }
+ }
+  </script>
 </body>
   
 </html>
