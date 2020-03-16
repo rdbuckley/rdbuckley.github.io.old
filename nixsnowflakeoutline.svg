@@ -1,10 +1,10 @@
 <svg width="501.70361" height="435.14028" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4501">
-   <circle clip-rule="nonzero" fill="#adadad" fill-rule="evenodd" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" id="circle4503" cx="335.13995" cy="686.09473" r="241.06563"/>
+   <circle clip-rule="nonzero" fill="#adadad" fill-rule="evenodd" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="8" stroke-dashoffset="0" id="circle4503" cx="335.13995" cy="686.09473" r="241.06563"/>
   </clipPath>
   <clipPath clipPathUnits="userSpaceOnUse" id="clipPath5410">
-   <circle clip-rule="nonzero" fill="#ffffff" fill-rule="evenodd" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" id="circle5412" cx="335.98114" cy="340.98975" r="241.13741"/>
+   <circle clip-rule="nonzero" fill="#ffffff" fill-rule="evenodd" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="8" stroke-dashoffset="0" id="circle5412" cx="335.98114" cy="340.98975" r="241.13741"/>
   </clipPath>
   <linearGradient id="linearGradient5960">
    <stop stop-color="#637ddf" offset="0" id="stop5962"/>
