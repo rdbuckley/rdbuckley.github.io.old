@@ -21,11 +21,11 @@
  <g>
   <title>Layer 1</title>
   <g display="none" id="layer7">
-   <rect clip-rule="nonzero" fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" shape-rendering="auto" y="-24.587818" x="-23.756509" height="483.7439" width="1543.4283" id="rect5389"/>
+   <rect clip-rule="nonzero" fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="8" stroke-dashoffset="0" shape-rendering="auto" y="-24.587818" x="-23.756509" height="483.7439" width="1543.4283" id="rect5389"/>
   </g>
   <g display="none" id="layer6">
-   <rect clip-rule="nonzero" fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" shape-rendering="auto" id="rect5379" width="550.41602" height="484.30399" x="-23.687425" y="-24.837099"/>
-   <rect clip-rule="nonzero" fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" shape-rendering="auto" y="0.162901" x="-0.215685" height="434.30405" width="501.94415" id="rect5372"/>
+   <rect clip-rule="nonzero" fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="8" stroke-dashoffset="0" shape-rendering="auto" id="rect5379" width="550.41602" height="484.30399" x="-23.687425" y="-24.837099"/>
+   <rect clip-rule="nonzero" fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="8" stroke-dashoffset="0" shape-rendering="auto" y="0.162901" x="-0.215685" height="434.30405" width="501.94415" id="rect5372"/>
    <rect clip-rule="nonzero" fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" shape-rendering="auto" y="-24.849729" x="501.689545" height="24.939611" width="24.939611" id="rect5381"/>
   </g>
   <path clip-rule="nonzero" fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" id="path4861" d="m153.064935,222.938391l122.19683,211.6751l-56.15706,0.5268l-32.6236,-56.8692l-32.85645,56.5653l-27.90237,-0.011l-14.29086,-24.6896l46.81047,-80.4902l-33.22946,-57.8256l28.0525,-48.8816z"/>
