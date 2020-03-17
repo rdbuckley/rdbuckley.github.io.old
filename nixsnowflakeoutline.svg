@@ -1,6 +1,6 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 1024" height="500px" width="500px" fill-opacity="0.0" stroke="#fff" stroke-width="4" stroke-opacity="0.8" style="background-color: dodgerblue;" >
+	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" height="500px" width="500px" fill-opacity="0.0" stroke="#fff" stroke-width="4" stroke-opacity="0.8" style="background-color: dodgerblue;" >
 	<defs>
 		<path id="segment1" d="m348.804465,212.201891l-122.19683,-211.6751l56.15706,-0.5268l32.6236,56.8692l32.85645,-56.5653l27.90237,0.011l14.29086,24.6896l-46.81047,80.4902l33.22946,57.8256l-28.0525,48.8816z"/>
 		<path id="segment2" d="m304.533065,299.347991l122.21757,-211.66304l28.53477,48.37003l-32.93839,56.68751l65.4152,0.1718l13.9414,24.1698l-14.23636,24.7211l-93.11177,-0.294l-33.46371,57.6904l-56.35871,0.1464z"/>
