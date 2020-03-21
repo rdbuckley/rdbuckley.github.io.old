@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="fr">
-  <head>
-    <base href="https://tweag.io/">
+  <head> 
+      <base href="https://tweag.io/">
     <meta charset="utf-8">
     <title>Tweag - Bazel</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,13 +11,7 @@
     <link rel="stylesheet" href="asciinema/asciinema-player.css">
     <script src="js/modernizr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-  <style>
-    .Project-title {
-    font-size: 2.8rem;
-    font-weight: 400;
-    line-height: 3.5rem;
-    text-transform: uppercase;
-}
+ <style>
     .Project-number {
 margin-bottom: 1.3rem;
     font-size: 1.6rem;
@@ -27,11 +21,12 @@ margin-bottom: 1.3rem;
     letter-spacing: .28rem;
     text-transform: uppercase;
 }
-    .Project-content {  
-      width: ;
-    }
-      .Project {  
-    }
+    .Project-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+}
     .Project-title::after {
     content: "";
     width: 100%;
@@ -40,17 +35,22 @@ margin-bottom: 1.3rem;
     background: #ededed;
     margin-top: 1.2rem;
 }
-    .Project-image {
-    -ms-flex-order: 1;
-    order: 1;
-    color: #fff;
-      width:30rem;
-      height:auto;
-          margin: 0 auto;
-}
+     a {
+    text-decoration: none;
+    color: #E7187F;
 
-    
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+       }}
+   @media (max-width: 1023px)
+.Project {
+    height: auto;
+    padding: 5rem 0;
+    min-height: 80rem;
+}
     </style>
+  
   </head>
   <body>
     <script>
@@ -79,54 +79,59 @@ margin-bottom: 1.3rem;
         </nav>
       </header>
       <div class="PageProjects">
-        <h1 class="Title Title--light">Our Bazel work</h1>
-       <div class="" style="
-    margin: 0 auto;
-">
-          <div style="padding-top: 6rem;margin: 0 auto;"><img class="Project-image" src="https://rdbuckley.github.io/bazel-outline.svg"style="width: 26rem;padding: 4rem 3rem 0 3rem"><div></div></div>
-            <div class="Project-container" style="margin: 2rem 0 2rem 0">
+        <h1 class="Title Title--light">We know Bazel</h1>
+<div style="margin: 0 auto"><img class="Project-image" src="http://rdbuckley.github.io/bazel-outline.svg" style="width: 20rem;padding-top: 6rem">
                 
-                <div>
-                  <p class="Project-text" style="color: white;">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get</p>
+</div>
+        <div style= "margin: 3rem;">
+                  <p class="Project-text" style="color: white;max-width: 98rem;margin-left:1rem">Software can't eat the world until it's built first. When you build software with Bazel, you're running the same code that has been refined and tested for years at Google to build heavy-duty, mission-critical infrastructure, services, and applications. What's more, take a peek at this <a href="https://github.com/bazelbuild/bazel/wiki/Bazel-Users" />impressive list of Bazel users</a> in the commercial and open source space.</p>
                 </div>
-              </div>
-           <div class="Projects"> 
+        <hr style="width: 95%;
+    max-width: 98rem;
+    position: relative;
+    top: 20px;
+    border: none;
+    height: .1rem;
+    background: #ffffff;
+    margin-bottom: 4rem;">
+        <div class="Projects">
           <section class="Project">
-            <div class="Project-container"><img class="Project-image" src="https://rdbuckley.github.io/thinking-man-logo.svg" width="368" height="368" alt="illustration haskellr">
+            <div class="Project-container"><img class="Project-image" src="http://rdbuckley.github.io/thinking-man-logo.svg" width="368" height="368" alt="illustration haskellr">
               <div class="Project-content"><span class="Project-number">Bazel Readiness Assessment</span>
                 <h2 class="Project-title">Ready for Bazel?</h2>
                 <div class="Project-text">
-                  <p>What is Bazel anyway? Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz.</p>
+                  <p>Well, how'd you become king, then? Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. That is why I am your king. Help, help, I'm being repressed! The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur.  That is why I am your king.</p>
                 </div>
               </div>
             </div>
           </section>
           <section class="Project">
-            <div class="Project-container"><img class="Project-image" src="https://rdbuckley.github.io/nix-snowflake.svg" width="368" height="368" alt="Nix" style="width: 16rem"><img class="Project-image" src="https://rdbuckley.github.io/bazel-icon.svg" width="" height="" alt="Bazel" style="width: 16rem">
+            <div class="Project-container"><img class="Project-image" src="https://rdbuckley.github.io/nix-snowflake.svg" alt="Nix" style="width: 16rem"><img class="Project-image" src="https://rdbuckley.github.io/bazel-icon.svg" width="" height="" alt="Bazel" style="width: 16rem">
               <div class="Project-content"><span class="Project-number">Nix + Bazel</span>
                 <h2 class="Project-title">Ready for reproducible builds?</h2>
                 <div class="Project-text">
-                  <p>Nix + Bazel = fully reproducible, incremental builds. The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim.How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz.</p>
+                  <p>Well, how'd you become king, then? Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. That is why I am your king.Well, how'd you become king, then? Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. That is why I am your king.</p>
                 </div>
               </div>
             </div>
           </section>
           <section class="Project">
-            <div class="Project-container"><img class="Project-image" src="https://rdbuckley.github.io/tuning-fork-man.svg" width="437" height="263" alt="illustration sparkle">
+            <div class="Project-container"><img class="Project-image" src="http://rdbuckley.github.io/tuning-fork-man.svg" width="368" height="368" alt="">
               <div class="Project-content"><span class="Project-number">Bazel Professional Services</span>
                 <h2 class="Project-title">Ready to tune Bazel?</h2>
                 <div class="Project-text">
-                  <p>We've been working with Bazel for years in a wide variety of environments… Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz.</p>
+                  <p>The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. Help, help, I'm being repressed! The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. That is why I am your king.Well, how'd you become king, then? That is why I am your king.</p>
                 </div>
               </div>
             </div>
           </section>
-           <section class="Project">
-            <div class="Project-container">
+                    <section class="Project">
+            <div class="Project-container" >
               <div class="Project-content"><span class="Project-number">We know Bazel</span>
                 <h2 class="Project-title">Ready to learn more?</h2>
                 <div class="Project-text">
-                  <a class="Article-text" style="font-size:2.5rem" href="mailto:hello@tweag.io?Subject=Your Bazel Page">hello@tweag.io</a>
+                  <p style="padding-bottom: 2rem">Procrastination is opportunity's assassin. The Lady of the Lake, her arm clad in the purest shimmering samite,</p>
+                <a class="Article-text" style="font-size: 3.5rem;text-decoration: none;" href="mailto:bazel@tweag.io?Subject=Your Bazel Page">hello@tweag.io</a>
                 </div>
               </div>
             </div>
