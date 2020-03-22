@@ -38,24 +38,32 @@ margin-bottom: 1.3rem;
      a {
     text-decoration: none;
     color: #E7187F;
+       font-weight:600;
 
     &:hover {
       text-decoration: underline;
       cursor: pointer;
        }}
-   @media (max-width: 1023px)
+   @media (max-width: 1023px){
 .Project {
     height: auto;
     padding: 5rem 0;
     min-height: 80rem;
-}
+     }}
    .Project-text
    {
-   color: white;max-width: 98rem;margin-left:1rem;
+   color: white;max-width: 98rem;
+   }
+      .Project-text-indent1
+   {
+   color: white;max-width: 98rem;margin-left:1rem
    }
       .Project-text-purple
    {
-   color: #4B1F7F;max-width: 98rem;margin-left:1rem;
+   color: #4B1F7F;max-width: 98rem;
+   }
+   .PageProjects {
+    background-image: linear-gradient(to bottom, #181039, #8c2c5d 250rem);
    }
    
     </style>
@@ -89,21 +97,27 @@ margin-bottom: 1.3rem;
       </header>
       <div class="PageProjects">
         <h1 class="Title Title--light">We know Bazel</h1>
-<div style="margin: 0 auto"><img class="Project-image" src="http://rdbuckley.github.io/bazel-outline.svg" style="width: 20rem;padding-top: 6rem">
+<div style="margin: 0 auto"><img class="Project-image" src="http://rdbuckley.github.io/bazel-outline.svg" style="width: 20rem;padding-top: 6rem; padding-bottom:2rem">
                 
 </div>
         <div style= "margin: 0 3rem 3rem;">
-                  <p class="Project-text" style="color: white;max-width: 98rem;margin-left:1rem"><b>Software can't eat the world until it builds successfully.</b> When you build software with Bazel, you're running the same code that has been refined and tested for years at Google to build heavy-duty, mission-critical infrastructure, services, and applications. What's more, take a peek at this <a href="https://github.com/bazelbuild/bazel/wiki/Bazel-Users" />impressive list of Bazel users</a> in both the commercial and open source space. It's practically impossible that software now built by Bazel isn't somehow touching your life every day—and that list keeps growing. </p>
+                  <p class="Project-text Project-text-indent1"><b>Software can't eat the world until it builds successfully.</b> When you build software with Bazel, you're running the same code that has been refined and tested for years at Google to build heavy-duty, mission-critical infrastructure, services, and applications. What's more, take a peek at this <a href="https://github.com/bazelbuild/bazel/wiki/Bazel-Users" />impressive list of Bazel users</a> in both the commercial and open source space. It's practically impossible that software now built by Bazel isn't somehow touching your life every day—and that list keeps growing. </p>
 
-<p class="Project-text" style="color: white;max-width: 98rem;margin-left:1rem">Bazel's Vision is to ensure "Any software developer can efficiently build, test, and package any project, of any size or complexity, with tooling that's easy to adopt and extend." We believe Bazel has the potential to fulfill this vision. And, we can help you move closer to that vision in your organization. Today, Bazel's tagline "Build and test software of any size, quickly and reliably" is accurate. It's also accurate that Bazel migrations can be challenging. We're helping worldwide with Bazel's adoption, and with its ongoing development.</p>
-
-      <p class="Project-text" style="font-size: 2.8rem;
+<p class="Project-text Project-text-indent1" style="
+    font-style: italic;
+    /* font-weight: 700; */
+    "><span style="
+    font-style: normal;
     font-weight: 700;
-    line-height: 3.5rem;
-    margin-left: 1rem;
-    color: #ffffff;" >We know Bazel.</p>
-<p class="Project-text" style="color: white;max-width: 98rem;margin-left:1rem">Let's discuss how Tweag can help you optimize every phase of your Bazel migration—from assessing your Bazel readiness to tuning an existing migration.</p>
-      <p class="Project-text"><a style="font-weight: 700;"href="mailto:bazel@tweag.io?Subject=Your Bazel Page">Ask us anything about Bazel.</a></p>
+">Bazel's Vision</span> "Any software developer can efficiently build, test, and package any project, of any size or complexity, with tooling that's easy to adopt and extend."</p>
+      
+      <p class="Project-text Project-text-indent1">We believe Bazel has the potential to fulfill this vision. And, we can help you move closer to that vision in your organization. Today, Bazel's tagline "Build and test software of any size, quickly and reliably" is accurate. It's also accurate that Bazel migrations can be challenging. We're helping worldwide with Bazel's adoption, and with its ongoing development.</p>
+
+      <p class="Project-text" style="font-size: 2.8rem;font-weight: 700;line-height: 3.5rem;margin-left: 1rem;color: #ffffff;" >We know Bazel.</p>
+
+      <p class="Project-text Project-text-indent1">Tweag is one of Bazel's earliest adopters and has been an active contributor of new features and new <a href="http://foo.com/" target="_blank">open source extensions</a> since early 2018. We're one of the first firms named by Google as a <a href="https://www.bazel.build/experts.html" target="_blank">Bazel Community Expert</a>—and we're a <a href="https://cloud.withgoogle.com/partners/detail/?id=tweag-i-o" target="_blank">Google Cloud Partner</a> too.  We work to help others succeed in switching to Bazel. We're experts at <a href="https://www.tweag.io/posts/2018-03-15-bazel-nix.html" target="_blank">Nix + Bazel to achieve reproducibility</a>. Tweag engineers and scientists bring rich Bazel skills complemented with deep technology expertise to your projects.</p>
+      <p class="Project-text Project-text-indent1">Let's explore how Tweag can help you optimize every phase of your Bazel migration—from helping you get ready for Bazel with our new <a class="_e75a791d-denali-editor-page-rtfLink" href="https://tweag.io/bazel" target="_blank">Bazel Readiness Assessment</a> to performing migrations and improving existing setups.</p>
+      <p class="Project-text Project-text-indent1"><a style="font-weight: 700;" href="mailto:bazel@tweag.io?Subject=Your Bazel Page">Ask us anything about Bazel.</a></p>
 
                 </div>
         <hr style="width: 95%;
@@ -114,13 +128,14 @@ margin-bottom: 1.3rem;
     height: .1rem;
     background: #ffffff;
     margin-bottom: 4rem;">
+    
         <div class="Projects">
           <section class="Project">
             <div class="Project-container"><img class="Project-image" src="http://rdbuckley.github.io/thinking-man-logo.svg" width="368" height="368" alt="">
               <div class="Project-content"><span class="Project-number">Bazel Readiness Assessment</span>
                 <h2 class="Project-title">Ready for Bazel?</h2>
                 <div class="Project-text">
-                  <p>Well, how'd you become king, then? Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. That is why I am your king. Help, help, I'm being repressed! The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur.  That is why I am your king.</p>
+                  <p>Our Bazel Readiness Assessment is an expert, objective answer to a pressing question nowadays: Are we ready for Bazel? It’s the most important, most practical guidance you can get on your path to Bazel adoption and implementation. Blah, blah. You'll get a report at the conclusion that details how you benefit from migrating to the Bazel build system. We'll describe what improvements you can expect, where you might expect regressions, and what resources the migration will require—valuable information for budgeting. Well, how'd you become king, then? That is why I am your king. Help, help, I'm being repressed! The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur.  That is why I am your king.</p>
                 </div>
               </div>
             </div>
