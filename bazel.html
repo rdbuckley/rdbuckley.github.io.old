@@ -12,6 +12,13 @@
 									<script src="js/modernizr.js"></script>
 <script src="https://use.fontawesome.com/c858bba52f.js"></script>
 									<style>
+                    
+.Project {
+height: auto;
+padding: 5rem 0;
+height: 80rem;
+ min-height:80rem
+	   }
     .Project-number {
 margin-bottom: 1.3rem;
     font-size: 1.6rem;
@@ -49,11 +56,12 @@ margin-bottom: 1.3rem;
     height: auto;
     padding: 5rem 0;
     min-height: 80rem;
-     }
+	   }
      .textBox
 {
   margin: 0 3rem 2rem;}
-    }
+}}
+
    .Project-text
    {
    color: white;max-width: 98rem;
@@ -80,13 +88,13 @@ max-width: 98rem;
  }
 .textBox
 {
-    margin: 0 6rem 3rem;
+margin: 2.5rem 1rem 3rem 1.2rem;
     float: right;
-
-    width: 28rem;
-    min-width: 28rem;
-  
-    padding: 1rem;
+    width: 31rem;
+    min-width: 31rem;
+    padding: 1.1rem 2rem;
+    border: 1px solid rgba(255, 255, 255, .6);
+	color: #ffffff;
 }
     </style>
 								</head>
@@ -147,8 +155,8 @@ max-width: 98rem;
 													</div>
 													<div class="bazelDiv" style= "margin: 0 3rem 3rem;">
 <p class="Project-text Project-text-indent1"><b>Software can't eat the world until it builds successfully.</b> When you build software with Bazel, you're using the same tool Google relies on to build their heavy-duty, mission-critical infrastructure, services, and applications. Bazel builds billions of lines of source code, thousands of times a day at Google. Beyond that massive Bazel implementation, take a peek at this <a href="https://github.com/bazelbuild/bazel/wiki/Bazel-Users">impressive list of Bazel users</a> in more typical commercial environments and in open source too. It's practically impossible that some piece of software, now built by Bazel, isn't somehow touching your life every day—and that list keeps growing.</p>
-                            <div class="textBox" style="margin: 0 6rem 3rem;float: right;/* width: 45rem; */width: 28rem;min-width: 28rem;/* height: 11rem; */padding: 1rem;">
-                              <p class="Project-text" style="font-style: italic;"><a href="https://www.bazel.build/experts.html" target="_blank">
+                            <div class="textBox" >
+   <p class="Project-text" style="font-style: italic; margin-top: 0rem;"><a href="https://www.bazel.build/experts.html" target="_blank">
 <span style="font-style: normal;font-weight: 700;">Bazel vision </span></a>&nbsp; Any software developer can efficiently build, test, and package any project, of any size or complexity, with tooling that's easy to adopt and extend."
 </p></div>
 													<p class="Project-text Project-text-indent1">We believe Bazel has the potential to fulfill its vision. For many, Bazel as your build tool isn't an <i>if</i>—it's a <i>when</i>—and we can start getting you there now. Bazel's tagline "Build and test software of any size, quickly and reliably" is accurate. It's also accurate that Bazel migrations can be challenging. That's why we're helping worldwide with Bazel's adoption, and with its ongoing development—at its core, and with complementary open source tooling.</p>
@@ -161,7 +169,7 @@ max-width: 98rem;
 													</p>
 													<p class="Project-text Project-text-indent1">That combination gives us a unique insight into Bazel's capabilities and its challenges. It's why we can answer tough Bazel questions—and ask the right ones.</p>
 													<p class="Project-text Project-text-indent1">Let's explore how Tweag can help you optimize every phase of your Bazel migration—from helping you get ready for Bazel with our new 
-														<a class="_e75a791d-denali-editor-page-rtfLink" href="https://tweag.io/bazel" target="_blank">Bazel Readiness Assessment</a> to performing migrations and improving existing setups.
+														<a class="_e75a791d-denali-editor-page-rtfLink" href="https://tweag.io/bazel" target="_blank">Bazel&nbsp; Readiness&nbsp;Assessment</a> to performing migrations and improving existing setups.
 													</p>
 													<p class="Project-text Project-text-indent1">
 														<a style="font-weight: 700;" href="mailto:bazel@tweag.io?Subject=Your Bazel Page">Ask us anything about Bazel.</a>
@@ -172,10 +180,10 @@ max-width: 98rem;
 														<div class="Project-container">
 															<img class="Project-image" src="http://rdbuckley.github.io/thinking-man-logo.svg" width="368" height="368" alt="">
 																<div class="Project-content">
-																	<span class="Project-number">Bazel Readiness Assessment</span>
+																	<span class="Project-number">Bazel&nbsp; Readiness&nbsp;Assessment</span>
 																	<h2 class="Project-title">Ready for Bazel?</h2>
 																	<div class="Project-text">
-																		<p>Our Bazel Readiness Assessment is an expert, objective answer to a pressing question nowadays: Are we ready for Bazel? It’s the most important, most practical guidance you can get on your path to Bazel adoption and implementation. Blah, blah. You'll get a report at the conclusion that details how you benefit from migrating to the Bazel build system. We'll describe what improvements you can expect, where you might expect regressions, and what resources the migration will require—valuable information for budgeting. Well, how'd you become king, then? That is why I am your king.</p>
+																		<p>Our Bazel&nbsp; Readiness&nbsp;Assessment is an expert, objective answer to a pressing question nowadays: Are we ready for Bazel? It’s the most important, most practical guidance you can get on your path to Bazel adoption and implementation. Blah, blah. You'll get a report at the conclusion that details how you benefit from migrating to the Bazel build system. We'll describe what improvements you can expect, where you might expect regressions, and what resources the migration will require—valuable information for budgeting. Well, how'd you become king, then? That is why I am your king.</p>
 																	</div>
 																</div>
 															</div>
@@ -196,11 +204,11 @@ max-width: 98rem;
 																			<p class="Project-text Project-text-purple">We deeply care about software quality. We focus on lightweight methods to get strong quality guarantees. Software, bugs and all, should be reproducible from source today across all developers in your team and 10 years into the future. Bugs, transient ones and all, should be caught as early as possible by automated analysis, even before the test suite runs. Software components, third party vendor packages and all, should be easy to compose without fear of version conflicts.</p>
 																			<p class="Project-text Project-text-purple">We help our clients deploy Nix + Bazel because it considers those things.</p>
 																			<p class="Project-text Project-text-purple">
-																				<a href="https://www.tweag.io/posts/2018-03-15-bazel-nix.html" />Nix + Bazel = Incremental builds.</a>
+																				<a href="https://www.tweag.io/posts/2018-03-15-bazel-nix.html">Nix + Bazel = Incremental builds.</a>
 																			<br>
-																				<a href="https://www.tweag.io/posts/2018-03-15-bazel-nix.html" />Bazel, Cabal, Stack: Why choose when you can have them all?</a>
+																				<a href="https://www.tweag.io/posts/2018-03-15-bazel-nix.html">Bazel, Cabal, Stack: Why choose when you can have them all?</a>
 																			<br>
-																				<a href="https://youtu.be/hDdDUrty1Gw" />Nix + Bazel | Mathieu Boespflug, Tweag I/O | BazelCon 2018 <i class="fab fa-youtube"></i></a>
+																				<a href="https://youtu.be/hDdDUrty1Gw">Nix + Bazel | Mathieu Boespflug, Tweag I/O | BazelCon 2018 <i class="fab fa-youtube"></i></a>
 																		</p>
 																	</div>
 																</div>
