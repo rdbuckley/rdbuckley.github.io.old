@@ -12,109 +12,94 @@
 <script src="js/modernizr.js"></script>
 <script src="https://use.fontawesome.com/c858bba52f.js"></script>
 <style>
- 
 .Project {
-height: auto;
-padding: 5rem 0;
- min-height:80rem
- }
- .Project-number {
-margin-bottom: 1.3rem;
- font-size: 1.6rem;
- font-weight: 600;
- line-height: 1.8rem;
- color: #e71882;
- letter-spacing: .28rem;
- text-transform: uppercase;
+height : auto;
+padding : 5rem 0;
+min-height : 80rem;
 }
- .Project-title {
- font-size: 2.8rem;
- font-weight: 700;
- line-height: 3.5rem;
- text-transform: uppercase;
+.Project-number {
+margin-bottom : 1.3rem;
+font-size : 1.6rem;
+font-weight : 600;
+line-height : 1.8rem;
+color : #e71882;
+letter-spacing : 0.28rem;
+text-transform : uppercase;
 }
- .Project-title::after {
- content: "";
- width: 100%;
- height: .1rem;
- display: block;
- background: #ededed;
- margin-top: 1.2rem;
+.Project-title {
+font-size : 2.8rem;
+font-weight : 700;
+line-height : 3.5rem;
+text-transform : uppercase;
 }
- a {
- text-decoration: none;
- color: #E7187F;
- font-weight:600;
-
- &:hover {
- text-decoration: underline;
- cursor: pointer;
- }}
- @media (max-width: 1023px){
+.Project-title::after {
+content : "";
+width : 100%;
+height : 0.1rem;
+display : block;
+background : #ededed;
+margin-top : 1.2rem;
+}
+a {
+text-decoration : none;
+color : #E7187F;
+font-weight : 600;
+}
+@media (max-width: 1023px) {
 .Project {
- height: auto;
- padding: 5rem 0;
- min-height: 80rem;
- }
- .textBox
-{
- margin: 0 3rem 2rem;}
-}}
- .PageProjects {
- background-image: linear-gradient(to bottom, #181039, #8c2c5d 250rem);
- }
- .Project:first-child{
- background-image: linear-gradient(to bottom, #932e65, #5a1d61);
- }
-.bazelDiv
- {
-width: 100%;
-padding: 0 3rem;
-max-width: 98rem;
- }
-.textBox
-{
-margin: 2.5rem 1rem 3rem 1.2rem;
- float: right;
- width: 31rem;
- min-width: 31rem;
- padding: 1.1rem 2rem;
- border: 1px solid rgba(255, 255, 255, .6);
-color: #ffffff;
+height : auto;
+padding : 5rem 0;
+min-height : 80rem;
+}
+.textBox {
+margin : 0 3rem 2rem;
+}
+}
+.PageProjects {
+background-image : linear-gradient(to bottom, #181039, #8c2c5d 250rem);
+}
+.Project:first-child {
+background-image : linear-gradient(to bottom, #181039, #5a1d61);
+}
+.bazelDiv {
+width : 100%;
+padding : 0 3rem;
+max-width : 98rem;
+}
+.textBox {
+margin : 2.5rem 1rem 3rem 1.2rem;
+float : right;
+width : 31rem;
+min-width : 31rem;
+padding : 1.1rem 2rem;
+border : rgb(255, 255, 255, 0.6) solid 1px;
+color : #ffffff;
 }
 .askUs {
-font-weight: 700;
- float: right;
- font-size: 1.8rem;
- font-style: italic;
+font-weight : 700;
+float : right;
+font-size : 1.8rem;
+font-style : italic;
 }
- .Project-text, .Project-text-purple
- {
- color: white;max-width: 98rem;font-size: 1.7rem;letter-spacing: .02rem;
- }
- .Project-text-indent1
- {
- color: white;max-width: 98rem;margin-left:1rem;font-size: 1.7rem;
- }
- .Project-text-purple
- {
- color: #4b1f80;
- }
- .Project-container
- {
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
- /* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-   .Project-text
-   {
-    font-size:1.6rem;
+.Project-text, .Project-text-purple {
+color : white;
+max-width : 98rem;
+font-size : 1.7rem;
+letter-spacing : 0.02rem;
+}
+.Project-text-indent1 {
+color : white;
+max-width : 98rem;
+<!-- margin-left : 1rem;
+font-size : 1.7rem; -->
+}
+.Project-text-purple {
+color : #4b1f80;
+}
+.Project-container {
+display : flex;
+align-items : center;
+justify-content : center;
 }
  </style>
 </head>
@@ -169,7 +154,7 @@ font-weight: 700;
 </nav>
 </header>
 <div class="PageProjects" style="background-image: linear-gradient(to bottom, #181039, #8c2c5d 223rem);">
-<h1 class="Title Title--light" style="letter-spacing: .2rem;font-size: 2.7rem;padding-bottom:2rem;">Tweag Knows<img class="Project-image" src="http://rdbuckley.github.io/bazel-outline.svg" style="width: 18rem;"></h1>
+<h1 class="Title Title--light" style="letter-spacing: .2rem;font-size: 2.7rem;padding-top:4.5rem;margin-bottom:6rem;">Tweag Knows<img class="Project-image" src="http://rdbuckley.github.io/bazel-outline.svg" style="width: 18rem;"></h1>
 
 <div class="bazelDiv" style= "margin: 0 3rem 3rem;">
 <p class="Project-text Project-text-indent1"><b>Software can't eat the world until it builds.</b> When you build software with Bazel, you're using the same tool Google relies on to build their heavy-duty, mission-critical infrastructure, services, and applications. Bazel builds billions of lines of source code, thousands of times a day at Google. Beyond that massive Bazel implementation, take a peek at this <a href="https://github.com/bazelbuild/bazel/wiki/Bazel-Users">impressive list of Bazel users</a> in more typical commercial environments and in open source too. Your life is probably touched every day by software built with Bazel—and that list keeps growing.</p>
@@ -206,7 +191,10 @@ font-weight: 700;
 
  <p class="Project-text">Neither is true.</p>
 
-<p class="Project-text">What is true, and you do consistently hear about Bazel migration projects, is having earlier knowledge to improve resource planning and communicate expectations would've made a significant difference. Our Bazel&nbsp;Readiness&nbsp;Assessment is an expert, objective answer to a pressing question nowadays: Are we ready for Bazel? It’s the most important, most practical guidance you can get on your path to Bazel adoption and implementation. Blah, blah. You'll get a report at the conclusion that details how you benefit from migrating to the Bazel build system. We'll describe what improvements you can expect, where you might expect regressions, and what resources the migration will require—valuable information for budgeting. Well, how'd you become king, then? That is why I am your king.</p>
+<p class="Project-text">What is true—and you'll consistently hear about Bazel migration projects—is having earlier knowledge to improve resource planning and communicate expectations would've made a significant, positive difference. Our Bazel&nbsp;Readiness&nbsp;Assessment can make that difference.</p>
+ <p class="Project-text">It's an expert, objective answer to a pressing question nowadays: Are we ready for Bazel? It’s the most important, most practical guidance you can get on your path to Bazel adoption and implementation. Blah, blah.</p>
+ 
+ <p class="Project-text">You'll get a report at the conclusion that details how you benefit from migrating to the Bazel build system. We'll describe what improvements you can expect, where you might expect regressions, and what resources the migration will require—valuable information for budgeting. Well, how'd you become king, then? That is why I am your king.</p>
 </div>
 </div>
 </div>
@@ -267,7 +255,7 @@ font-weight: 700;
   <label for="name" style="
     display: none;
 ">Subscribe *</label>
-  <input type="email" id="email" name="email" placeholder="Add your email address for more info." pattern=".+@company\.com" required="" style="
+  <input type="email" id="email" name="email" placeholder="Add your email address for more info." required style="
     border-radius: 5px;
     border: 1px solid #4b1f80;
     padding: .75rem;
