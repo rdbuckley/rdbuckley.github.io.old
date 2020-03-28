@@ -298,19 +298,18 @@ justify-content : center;
   action="https://formspree.io/xaybzlrl"
   method="POST"
 >
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-
-  <!-- your other form fields go here -->
-
-  <button type="submit">Send</button>
+  <label for="name" style="
+    display: none;
+">Subscribe *</label>
+  <input type="email" id="email" name="email" placeholder="Add your email address for more info." pattern=".+@company\.com" required="" style="
+    border-radius: 5px;
+    border: 1px solid #4b1f80;
+    padding: .75rem;
+    width: 30rem;
+    font-size: 1.7rem;
+margin-top: 4rem;">
 </form>
+
  
 </div>
 <div style="margin: 0 auto;">
