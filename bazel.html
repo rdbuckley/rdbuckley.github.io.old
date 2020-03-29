@@ -46,7 +46,7 @@ margin-top : 1.2rem;
 }
 a {
 text-decoration : none;
-color : #ee5da6;
+color : #43a047;
 font-weight : 600;
 }
 @media (max-width: 1023px) {
@@ -61,7 +61,7 @@ min-height : 80rem;
     min-width: 97%;
     float: none; 
 }
-.Project-image{float:none;}
+.Project-image{float:none;max-height: 28.6rem;}
 }
 
 /*.PageProjects {
@@ -119,6 +119,16 @@ justify-content : center;
  .Project-text
     {font-size:1.6rem;}
 }
+/*.nixList li:before { 
+content:''; 
+display:inline-block; 
+height:1em; 
+width:1em; 
+background-image:url('https://rdbuckley.github.io/nix-snowflake-outline.svg'); 
+background-size:contain; 
+background-repeat:no-repeat; 
+padding-left: 2em; 
+}*/
  </style>
 </head>
 <body>
@@ -175,18 +185,17 @@ justify-content : center;
 <h1 class="Title Title--light" style="letter-spacing: .2rem;font-size: 2.7rem;padding-bottom:2rem;">Tweag Knows<img class="Project-image" src="http://rdbuckley.github.io/bazel-outline.svg" style="width: 18rem;"></h1>
 
 <div class="bazelDiv">
-<p class="Project-text Project-text-indent1"><b>Software can't eat the world until it builds.&nbsp;</b> When you build software with Bazel, you're using the same tool Google relies on to build their mission-critical infrastructure, services, and applications.</p>
+<p class="Project-text Project-text-indent1"><b>Bazel builds billions of lines of source code, thousands of times a day at Google.</b> When you build software with Bazel, you're using the same tool Google relies on to build their mission-critical infrastructure, services, and applications.</p>
 	
-<img class="Project-image" src="https://rdbuckley.github.io/google-outline.svg"  alt="Google" style="width: 12rem; float:left; margin:2rem; padding-bottom:0rem">	
-
-<p class="Project-text Project-text-indent1">Bazel builds billions of lines of source code, thousands of times a day at Google.</p>
-
+<img class="Project-image" src="https://rdbuckley.github.io/google-outline.svg" alt="Google" style="width: 12rem; float:left; margin:2rem; padding-bottom:0rem">	
  
-<p class="Project-text Project-text-indent1">That's impressive—but not everyone's a Google.&nbsp; Beyond their extraordinary implementation, you'll find a growing community of more realistically sized <a href="https://github.com/bazelbuild/bazel/wiki/Bazel-Users">Bazel&nbsp;users</a> who build software that does remarkable things in commercial environments and in open source projects everywhere.</p><p class="Project-text Project-text-indent1">Software built by Bazel touches your life every day—and that list keeps growing.</p>
+<p class="Project-text Project-text-indent1"><b>That's impressive—but everyone's not a Google.&nbsp;</b> Beyond their extraordinary implementation, you'll find a growing community of more realistically sized <a href="https://github.com/bazelbuild/bazel/wiki/Bazel-Users">Bazel&nbsp;users</a> who build software that does remarkable things in commercial environments and in open source projects.</p><p class="Project-text Project-text-indent1">Software built by Bazel touches your life every day—and that list keeps growing.</p>
 <div class="textBox">
  <p class="Project-text" style="font-style: italic; margin-top: 0rem;"><a href="https://docs.bazel.build/versions/master/bazel-vision.html" target="_blank">
 <span style="font-style: normal;font-weight: 700;font-size: 2.8rem;">Bazel vision<br></span></a>Any software developer can efficiently build, test, and package any project, of any size or complexity, with tooling that's easy to adopt and extend."
-</p></div><p class="Project-text Project-text-indent1">We believe Bazel is here for a long run and has the potential to fulfill its vision. For&nbsp;many, Bazel as your build tool isn't an <i>if</i>—it's a <i>when</i>.</p>
+</p></div>
+<p class="Project-text Project-text-indent1">We believe Bazel has the potential to fulfill its vision and be a leading build tool for a long time. For&nbsp;many, Bazel as your build tool isn't an <i>if</i>—it's&nbsp;a&nbsp;<i>when</i>.</p>
+	
 <p class="Project-text Project-text-indent1"><b>We can start getting you there now.</b></p>
 <p class="Project-text Project-text-indent1"> Bazel's tagline <i>Build and test software of any size, quickly and reliably</i> is accurate. It's also accurate that Bazel migrations can be challenging. That's why we're helping worldwide with Bazel's adoption, and with its ongoing development—at its core, and with complementary open source tooling.</p>
 <p class="Project-text" style="font-size: 2.8rem;font-weight: 700;line-height: 3.5rem;">We know Bazel.</p>
@@ -229,14 +238,14 @@ justify-content : center;
 
 <p class="Project-text">You'll get a report at the conclusion of a month's work together.  It details how you'll benefit from migrating to the Bazel build system. We'll describe what improvements you can expect, where you might expect regressions, and what resources your migration requires.</p>
     
-<p class="Project-text"><a href="#learnMore">Ready to make your Bazel migration simpler?</a></p>
+<p class="Project-text"><a href="https://rdbuckley.github.io/bazel_green#learnMore">Ready to make your Bazel migration simpler?</a></p>
 </div>
 </div>
 </div>
 </section>
 <section class="Project">
 <div class="Project-container">
-<img class="Project-image" src="https://rdbuckley.github.io/nix+bazel.svg" width="" height="" alt="Bazel" style="width: 40rem">
+<img class="Project-image" src="https://rdbuckley.github.io/nix+bazel_v.svg" width="" height="" alt="Bazel" style="height: 48.6rem">
 <div class="Project-content">
 <span class="Project-number">Nix + Bazel</span>
 <h2 class="Project-title">Ready for reproducible builds?</h2>
@@ -247,7 +256,10 @@ justify-content : center;
 <p class="Project-text Project-text-purple">Want to know our secret sauce to achieve predictable and reliable success on those high risk projects? 
 <b>Nix&nbsp;+&nbsp;Bazel.</b>
 </p>
-<p class="Project-text Project-text-purple">We are the co-creators of Nix and deeply care about software quality so we focus on lightweight methods to get strong quality guarantees.</p><p class="Project-text Project-text-purple">Software, bugs and all, should be reproducible from source today across all developers in your team and 10 years into the future. Bugs, transient ones and all, should be caught as early as possible by automated analysis, even before the test suite runs. Software components, third party vendor packages and all, should be easy to compose without fear of version conflicts.</p>
+<p class="Project-text Project-text-purple">We are the co-creators of Nix and deeply care about software quality so we focus on lightweight methods to get strong quality guarantees.</p>
+<ul class="Project-text Project-text-purple nixList" style="font-size: 1.6rem; font-style: italic; list-style-type: none;"><li style="
+    padding-bottom: 1.8rem;">Software, bugs and all, should be reproducible from source today across all developers in your team and 10 years into the future. </li><li style="
+    padding-bottom: 1.8rem;">Bugs, transient ones and all, should be caught as early as possible by automated analysis, even before the test suite runs. </li><li>Software components, third party vendor packages and all, should be easy to compose without fear of version conflicts.</li></ul>
 <p class="Project-text Project-text-purple">We help our clients deploy Nix + Bazel because it considers those things.</p>
 <p class="Project-text Project-text-purple" style="
     font-size: 1.3;
